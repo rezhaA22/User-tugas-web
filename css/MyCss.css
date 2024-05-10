@@ -45,15 +45,6 @@ nav.navbar div.navbar-nav a:hover {
   position: relative;
   top: 0;
 }
-
-.my-costume-hero .my-text-costume {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-60%);
-}
-.my-costume-hero .my-text-costume h1 {
-  width: max-content;
-}
 .my-costume-cari {
   position: absolute;
   left: 50%;
@@ -158,15 +149,10 @@ nav.navbar div.navbar-nav a:hover {
     display: block;
     width: 110%;
   }
-
-  .my-costume-hero .my-text-costume {
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  .my-costume-hero .my-text-costume {
-    display: none;
-  }
 }
 /* end costume */
+.text-primary .my-harga {
+  background-color: #806bff;
+}
+
+
