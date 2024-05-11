@@ -323,53 +323,75 @@
   color: var(--secondary) !important;
 }
 
-/*** Testimonial ***/
-.testimonial-carousel {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+/** TESTIMONI **/
+.client-review h1 {
+  font-family: lovelyn;
+  font-size: 6vw; /* Mengatur ukuran teks menjadi 6vw */
+  margin-bottom: 40px;
+  color: #000;
+  text-align: center; /* Posisikan teks ke tengah */
 }
 
-@media (min-width: 576px) {
-  .testimonial-carousel {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-
-.testimonial-carousel .testimonial-item .border {
-  border: 1px dashed rgba(0, 185, 142, 0.3) !important;
-}
-
-.testimonial-carousel .owl-nav {
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  top: calc(50% - 20px);
-  left: 0;
+.review-content {
   display: flex;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background: var(--primary);
-  border-radius: 40px;
-  font-size: 20px;
-  transition: 0.5s;
+  align-items: center;
+  background-color: #ffffff11; /* tambahkan background color */
+  border-radius: 15px; /* tambahkan border-radius */
+  overflow: hidden; /* agar bayangan tidak terpotong */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* tambahkan box-shadow */
 }
 
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-  background: var(--dark);
+.review-details {
+  flex: 1; /* agar ukuran div fleksibel */
 }
+
+.frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.client-img {
+  width: 380px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.review-text {
+  max-width: 610px;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 20px; /* tambahkan padding */
+  text-align: left; /* rata kiri */
+}
+
+
+.client-info {
+  padding: 20px; /* tambahkan padding */
+  text-align: right;
+}
+
+.client-name {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.review-date {
+  font-size: 20px;
+  color: #666;
+}
+
+
+/*** END TESTIMONI ***/
 
 /*** Footer ***/
 .footer .btn.btn-social {
