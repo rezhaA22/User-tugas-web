@@ -155,4 +155,45 @@ nav.navbar div.navbar-nav a:hover {
   background-color: #806bff;
 }
 
+.footer {
+  background-color: #ffffff; /* White background */
+  color: rgba(0, 0, 0, 0.5); /* Black text color with 50% opacity */
+}
+.footer a {
+  color: #806bff; /* Black link color with 50% opacity */
+}
+.footer a:hover {
+  color: rgba(0, 0, 0, 0.75); /* Black link color with 75% opacity on hover */
+}
+.btn-social {
+  margin-right: 10px;
+}
 
+
+.aboutus .header-title {
+  font-family: 'Lovelyn', sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+}
+.aboutus .content-section {
+  color: #333131;
+}
+.aboutus .icon-box {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.aboutus .icon-box img{
+  width: 100%;
+  height: 100%;
+}
+.aboutus .icon {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.aboutus img.imgbesar {
+  height: 100%;
+  object-fit: cover;
+}
