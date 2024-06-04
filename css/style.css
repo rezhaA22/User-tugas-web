@@ -324,36 +324,77 @@
 }
 
 /** TESTIMONI **/
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.client-review {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
 .client-review h1 {
-  font-family: lovelyn;
-  font-size: 6vw; /* Mengatur ukuran teks menjadi 6vw */
+  font-family: "Lovelyn", sans-serif;
+  font-size: 6vw; /* Adjust the text size */
   margin-bottom: 40px;
   color: #000;
-  text-align: center; /* Posisikan teks ke tengah */
+  text-align: center; /* Center align the text */
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the reviews horizontally */
 }
 
 .review-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff11; /* tambahkan background color */
-  border-radius: 15px; /* tambahkan border-radius */
-  overflow: hidden; /* agar bayangan tidak terpotong */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* tambahkan box-shadow */
+  background-color: #ffffff11; /* Add background color */
+  border-radius: 15px; /* Add border-radius */
+  overflow: hidden; /* Ensure shadows are not cut off */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+  margin: 20px; /* Adjust margin to 20px for spacing */
+  width: calc(50% - 40px); /* 50% width minus the margin */
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+
+.review-content:hover {
+  transform: translateY(-10px); /* Lift the card slightly on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
 }
 
 .review-details {
-  flex: 1; /* agar ukuran div fleksibel */
+  flex: 1; /* Make the div flexible */
 }
 
 .frame {
   position: relative;
   overflow: hidden;
+  border-radius: 50%; /* Make the image circular */
+  width: 150px; /* Fixed width for the image frame */
+  height: 150px; /* Fixed height for the image frame */
+  margin: 20px auto; /* Center the image frame */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the frame */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.frame:hover {
+  transform: scale(1.05); /* Slightly enlarge the frame on hover */
 }
 
 .client-img {
-  width: 380px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the frame */
+  border-radius: 50%; /* Ensure the image is circular */
 }
 
 .overlay {
@@ -363,19 +404,19 @@
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%; /* Ensure the overlay is circular */
 }
 
 .review-text {
   max-width: 610px;
   font-size: 20px;
   line-height: 1.5;
-  padding: 20px; /* tambahkan padding */
-  text-align: left; /* rata kiri */
+  padding: 20px; /* Add padding */
+  text-align: left; /* Align text to the left */
 }
 
-
 .client-info {
-  padding: 20px; /* tambahkan padding */
+  padding: 20px; /* Add padding */
   text-align: right;
 }
 
@@ -389,7 +430,6 @@
   font-size: 20px;
   color: #666;
 }
-
 
 /*** END TESTIMONI ***/
 
