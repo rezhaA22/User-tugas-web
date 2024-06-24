@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profil Pengguna</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f4f8fb;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        .btn-back {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .btn-back i {
+            margin-right: 10px;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+        }
+        .profile-header {
+            text-align: center;
+            padding: 40px;
+            background-color: #007bff;
+            color: #fff;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+        }
+        .profile-form {
+            padding: 40px;
+        }
+        .profile-form label {
+            color: #333;
+            font-weight: 600;
+        }
+        .form-control {
+            border-radius: 10px;
+            font-size: 16px;
+            height: 45px;
+        }
+        textarea.form-control {
+            height: auto;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            height: 45px;
+            margin-top: 20px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="btn btn-back"><i class="fas fa-arrow-left"></i>Kembali ke Beranda</a>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow-lg">
+                    <div class="card-body profile-header">
+                        <img src="img/profile-img.jpg" alt="Profile Image" class="profile-img">
+                        <h3 class="card-title">Edit Profil Pengguna</h3>
+                    </div>
+                    <div class="card-body profile-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Masukkan Username">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="full_name">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="full_name" placeholder="Masukkan Nama Lengkap">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone_number">Nomor Telepon</label>
+                                <input type="text" class="form-control" id="phone_number" placeholder="Masukkan Nomor Telepon">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Alamat</label>
+                                <textarea class="form-control" id="address" rows="3" placeholder="Masukkan Alamat"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password">Konfirmasi Password</label>
+                                <input type="password" class="form-control" id="confirm_password" placeholder="Masukkan Konfirmasi Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Simpan Perubahan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
